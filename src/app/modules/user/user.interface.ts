@@ -1,3 +1,4 @@
+// user.interface.ts
 import { Model } from "mongoose";
 
 export type IUser = {
@@ -5,7 +6,6 @@ export type IUser = {
   email: string;
   password: string;
   phone: string;
-  image: string;
 };
 
 export type UserModel = Model<IUser, Record<string, unknown>>;
