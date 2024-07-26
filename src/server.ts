@@ -1,7 +1,7 @@
-import { Server } from "http";
-import app from "./app";
+import { Server } from 'http';
+import app from './app';
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 let server: Server;
 
@@ -10,8 +10,5 @@ async function bootstrap() {
     console.log(`Example app listening on port ${PORT}`);
   });
 }
-app.listen(PORT, () => {
-  console.log(`Example app listening on port ${PORT}`);
-});
 
 bootstrap();
